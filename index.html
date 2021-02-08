@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
 	<div id="page">
 <!--id page始め----------------------------------------------------------------------------------------------------------------->
 <!--body部分始め--ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー>
@@ -44,7 +45,8 @@
 								<li><a href="#div03">3.ブログなど</a></li>
 								<li><a href="#div04">4.Webサイト</a></li>
 								<br>
-								<li><a href="#div05">おまけ　すしみくじ</a></li>
+								<li><a href="#div05">おまけゲーム　すしみくじ＆すしくずし<br>※
+								すしくずしはPCのみ対応</a></li>
 							</ul>
 						</nav>
 						</div>
@@ -59,7 +61,7 @@
 								<h4>1.イラスト・漫画・アニメーション</h4>
 								<p>イラストや漫画やアニメ、制作に使う素材なども自分で描きます。</p>
 								<img src="images/つばさ.png" width="130" height="180">
-								<img src="images/ハイビスカスボーイ.jpg" width="180" height="180">
+								
 								<img src="images/コンピュータ.jpeg" width="180" height="180">
 								<img src="images/漫画.jpeg" width="130" height="180">
 								<img src="images/年賀状.jpg" width="250" height="180">
@@ -105,9 +107,7 @@
 
 						<div class="contents" id="div04">
 								<h4>4.Webサイト</h4>
-								<p>自分の制作物を自分が作ったサイトで表現したいという想いから、HTML等を用いたWebサイト制作を学び始めました。2021年2月から始め、ネットのサイト等で学びながら何とか形にしたものがこのサイトです。</p>
-								<p><a href="https://github.com/MozzarellaHero/MozzarellaRoom.git">コードのリンク</a>
-		　　　　　　　　　       </p>
+								<p>自分の制作物を自分が作ったサイトで表現したいという想いから、HTMLとJavascriptを用いたWebサイト制作を学び始めました。2021年2月から始め、ネットのサイト等で学びながら何とか形にしているものがこのサイトです。コードのリンクは一番下に貼っています。</p>
 						</div>
 <!-- ４WEBサイト----------------------------------------------------------------------------------------------------------------->
 
@@ -117,38 +117,58 @@
 <div class="contents" id="div05">
 <section id="section02">
  <hr>
- <p><h2>おまけコンテンツ<br>すしみくじ(随時新ネタ更新予定)<h2>
- 	※ネタは全8種です（2月7日現在）。
+ <p>おまけコンテンツ<br><h2>すしみくじ(随時新ネタ更新予定)<h2>
+ 	<h5>※ネタは全13種です（2月8日現在）。<h5>
  </p>
 ↓クリック！
  <form><input type="button" value="すしみくじを引く" onclick="onClick()"></form>
 
-      <p><img src="./images/omikujitop.png" alt="すしみくじ画像" width="400" height="400" name="namOmikujiPNG">
-      <img src="./images/omikujitop2.png" alt="すしみくじ結果" width="400" height="400" name="namOmikujiPNG2">
+      <p><img src="./images/omikujitop.png" alt="すしみくじ画像" width="300" height="300" name="namOmikujiPNG">
+      <img src="./images/omikujitop2.png" alt="すしみくじ結果" width="300" height="300" name="namOmikujiPNG2">
       </p>
 		      <script>
 		     
 		   function onClick(){
-		      var varFileNum = Math.floor(Math.random()*8);
+		      var varFileNum = Math.floor(Math.random()*13);
 		      document.images["namOmikujiPNG"].src = "./images/omikuji-" + varFileNum + ".png"
 		      document.images["namOmikujiPNG2"].src = "./images/kekka-" + varFileNum + ".png"
 			}
 		   
-		      </script>参考資料
-	<a href="https://manapedia.jp/text/2170">マナペディア</a>
+		      </script>
+		      <h5>参考資料
+    <a href="https://manapedia.jp/text/2170">マナペディア</a>
 	<a href="http://sakuramitih31.blog.jp/archives/22935848.html">名歌名句鑑賞のblog</a>
-	<a href="http://omikuji.merrymall.net/index_20.html">おみくじ占い館</a>
+	<a href="http://omikuji.merrymall.net/index_20.html">おみくじ占い館</a><h5>
+	<hr>
 
+	<br>
+
+	<h2>
+		ミニゲームすしくずし※PCのみ対応
+	<h2>
+	<h5>
+	ブロック崩しゲームです。3ステージあるのでよければやってみてください！<br><br>
+		<h3><a href="https://mozzarellahero.github.io/minigame1/">ココをクリック！</a><h3>
+		<br>
+		<img src="images/sushikuzusi-top.png" width="300" height="300">
+	<br>
+	<注意>ポップアップがブロックされました等のメッセージが出た場合、許可していただければ次のステージに進めます。
+	<br><参考資料><br><a href="https://www.youtube.com/channel/UC5cB33Tw0OuhBKY7eV5QTKg">JavaScriptでブロック崩しゲームの作り方を実況解説！</a>
+	<br>
+	<h5>
+	
 </div>
 
 </section><!--section02終わり-->
+
+
 
 </div><!--idpage終わり-->
 
 </main>
 <hr>
 <footer>
-	※お問い合わせは本人のメールアドレス等にお願い致します（ここには掲載しておりません）。
+	<a href="https://github.com/MozzarellaHero">このWEBサイトのコードのリンクはこちら</a>
 	<h2><p id="pageTop"><a href="#">page top</a></p><h2>
 </footer>
 
